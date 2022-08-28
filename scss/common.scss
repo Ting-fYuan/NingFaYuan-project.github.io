@@ -1,0 +1,86 @@
+@import"reset.scss";
+
+header{
+    width: 100%;
+    height: 70px;
+    //logo样式
+    .headLeft{
+        display: inline-block;
+        width: 40%;
+        text-align: center;
+        img{
+           width: 45px;
+           display: inline-block;
+           position: absolute;
+           left: 250px;
+           top: 18px;
+        }
+        p{
+            color: #f39910;
+            display: inline-block;
+            position: absolute;
+            &:nth-of-type(1){
+                font-size: 19px;
+                top: 20px;
+                letter-spacing: 9px;
+            }
+            &:last-child{
+                font-size: 7px;
+                top: 43px;
+            }  
+        }
+        
+    }
+    //alink样式
+    .headRight{
+       display: inline-block;
+       width: 40%;
+       text-align: center;
+       line-height: 70px;
+       ul{
+        li{
+            display: inline-block;
+            a{
+               color: #666;
+               padding-right: 20px;
+               &:hover{
+                color: #f39910;
+               }
+               &::before{
+               content: '';
+               border-left: 1px solid #000;
+               padding-left: 20px;
+            }
+            }
+            
+            &:nth-child(5)::after{
+                content: '';
+                border-left: 1px solid #000;
+                padding-left: 20px;
+                }
+        }
+       }
+    }
+
+}
+
+//底部版权信息
+footer{
+    .copyRight{
+        width: 100%;
+        height: 120px;
+        background-color: #48382c;
+    p{
+        text-align: center;
+        &:first-child{
+            color: #fff;
+            padding-top: 50px;
+        }
+        &:last-child{
+            color: #999;
+            padding-top: 10px;
+        }
+
+    }
+    }
+}

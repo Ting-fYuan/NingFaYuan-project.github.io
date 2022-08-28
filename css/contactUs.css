@@ -1,0 +1,362 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  text-decoration: none;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+/* remember to define focus styles! */
+:focus {
+  outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+  text-decoration: none;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+header {
+  width: 100%;
+  height: 70px;
+}
+header .headLeft {
+  display: inline-block;
+  width: 40%;
+  text-align: center;
+}
+header .headLeft img {
+  width: 45px;
+  display: inline-block;
+  position: absolute;
+  left: 250px;
+  top: 18px;
+}
+header .headLeft p {
+  color: #f39910;
+  display: inline-block;
+  position: absolute;
+}
+header .headLeft p:nth-of-type(1) {
+  font-size: 19px;
+  top: 20px;
+  letter-spacing: 9px;
+}
+header .headLeft p:last-child {
+  font-size: 7px;
+  top: 43px;
+}
+header .headRight {
+  display: inline-block;
+  width: 40%;
+  text-align: center;
+  line-height: 70px;
+}
+header .headRight ul li {
+  display: inline-block;
+}
+header .headRight ul li a {
+  color: #666;
+  padding-right: 20px;
+}
+header .headRight ul li a:hover {
+  color: #f39910;
+}
+header .headRight ul li a::before {
+  content: "";
+  border-left: 1px solid #000;
+  padding-left: 20px;
+}
+header .headRight ul li:nth-child(5)::after {
+  content: "";
+  border-left: 1px solid #000;
+  padding-left: 20px;
+}
+
+footer .copyRight {
+  width: 100%;
+  height: 120px;
+  background-color: #48382c;
+}
+footer .copyRight p {
+  text-align: center;
+}
+footer .copyRight p:first-child {
+  color: #fff;
+  padding-top: 50px;
+}
+footer .copyRight p:last-child {
+  color: #999;
+  padding-top: 10px;
+}
+
+main .banner {
+  position: relative;
+}
+main .banner p {
+  color: #fff;
+  position: absolute;
+  left: 680px;
+}
+main .banner p:nth-of-type(1) {
+  font-size: 30px;
+  top: 130px;
+}
+main .banner p:nth-of-type(2) {
+  font-size: 20px;
+  top: 170px;
+}
+main .category {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  border-bottom: 1px solid #000;
+  display: flex;
+}
+main .category ul {
+  padding-left: 280px;
+}
+main .category ul li {
+  display: inline-block;
+}
+main .category ul li a {
+  color: #000;
+  padding-left: 20px;
+}
+main .category ul li a:hover {
+  color: #f57d0d;
+}
+main .category span {
+  color: #999;
+  padding-left: 600px;
+}
+main .contact {
+  width: 180px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+main .contact p {
+  text-align: center;
+}
+main .contact p:nth-of-type(1) {
+  font-size: 25px;
+  color: #333;
+}
+main .contact p:nth-of-type(2) {
+  font-size: 12px;
+  color: #666;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+main .contact .line {
+  border-bottom: 1px solid #999;
+}
+main .moreInfo {
+  margin-left: 270px;
+  margin-top: 50px;
+  position: relative;
+}
+main .moreInfo img {
+  width: 900px;
+}
+main .moreInfo .details {
+  width: 300px;
+  height: 340px;
+  background-color: rgba(245, 125, 13, 0.6);
+  position: absolute;
+  top: 0;
+  left: 600px;
+}
+main .moreInfo .details p {
+  color: #fff;
+  padding-top: 5px;
+  padding-left: 3px;
+}
+main .moreInfo .wechat,
+main .moreInfo .official {
+  position: absolute;
+  top: 200px;
+}
+main .moreInfo .wechat img,
+main .moreInfo .official img {
+  width: 60px;
+  height: 60px;
+}
+main .moreInfo .wechat p,
+main .moreInfo .official p {
+  color: #fff;
+}
+main .moreInfo .wechat {
+  left: 630px;
+}
+main .moreInfo .official {
+  left: 770px;
+}
+main .need {
+  height: 1920px;
+  height: 630px;
+  background-image: url(../image/talent_bgkimg.png);
+  position: relative;
+}
+main .need .talent {
+  text-align: center;
+  padding-top: 50px;
+}
+main .need .talent p:nth-of-type(1) {
+  font-size: 23px;
+  color: #fff;
+}
+main .need .talent p:nth-of-type(2) {
+  font-size: 12px;
+  color: #fff;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+main .need .talent .line {
+  width: 200px;
+  border-bottom: 3px solid #999;
+  margin: 0 auto;
+}
+main .need .designer {
+  width: 500px;
+  height: 370px;
+  background-color: #fff;
+  left: 300px;
+  top: 150px;
+  position: absolute;
+  z-index: 999;
+}
+main .need .designer .date {
+  width: 50px;
+  height: 70px;
+  background-color: rgba(245, 125, 13, 0.8);
+  margin-left: 10px;
+}
+main .need .designer .date p {
+  padding-top: 10px;
+}
+main .need .designer .info {
+  padding-left: 30px;
+  width: 420px;
+}
+main .need .designer .info p {
+  font-size: 20px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+main .need .designer .info .line {
+  border-bottom: 1px solid #000;
+  margin-bottom: 5px;
+}
+main .need .designer .info .require {
+  width: 420px;
+  height: 150px;
+  background-color: #fafafa;
+  overflow-y: scroll;
+}
+main .need .designer .info .require::-webkit-scrollbar-button, main .need .designer .info .require::-webkit-scrollbar-track {
+  display: none;
+}
+main .need .designer .info .require p {
+  font-size: 14px;
+  text-align: left;
+}
+main .need .designer button {
+  width: 100px;
+  height: 25px;
+  margin-left: 200px;
+  margin-top: 15px;
+  border: none;
+  background-color: rgb(245, 125, 13);
+}
+main .need .assistant {
+  width: 200px;
+  height: 370px;
+  background-color: #fff;
+  position: absolute;
+  top: 165px;
+  left: 770px;
+  z-index: 15;
+}
+main .need .assistant .info {
+  padding-left: 30px;
+  width: 140px;
+}
+main .need .assistant .info p {
+  font-size: 20px;
+  padding-top: 60px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+main .need .assistant .info .line {
+  border-bottom: 1px solid #000;
+  margin-bottom: 5px;
+}
+main .need .assistant .info .require {
+  width: 110px;
+  height: 150px;
+  background-color: #fafafa;
+  overflow-y: scroll;
+}
+main .need .assistant .info .require::-webkit-scrollbar {
+  display: none;
+}
+main .need .assistant .info .require p {
+  font-size: 14px;
+  text-align: left;
+  padding-top: 0;
+}
+main .need .assistant button {
+  width: 100px;
+  height: 25px;
+  margin-left: 50px;
+  margin-top: 15px;
+  border: none;
+  background-color: rgb(245, 125, 13);
+}
+
+/*# sourceMappingURL=contactUs.css.map */

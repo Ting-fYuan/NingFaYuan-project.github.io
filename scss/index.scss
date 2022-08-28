@@ -1,0 +1,606 @@
+@import 'common.css';
+@mixin title-style {
+     font-size: 12px;
+     font-weight: normal;
+     color: #999;
+     text-align: center;
+};
+@mixin span-style {
+     display: block;
+     font-size: 25px;
+     color: #f39910;
+     padding-bottom: 10px;
+     //定位文字两侧横线
+     position: relative;
+}
+@mixin line-style {
+     content: '';
+     position: absolute;
+     width: 70px;
+     height: 2px;
+     background-color: #ccc;
+     top: 15px;
+}
+
+main{
+    
+    .banner{
+        width: 100%;
+        img{
+            height: 100%;
+        }
+        //小圆点
+        .boxCircle{
+            display: flex;
+            position: absolute;
+            top:680px ;
+            left: 730px;
+            .circle{
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                background-color: #fff;
+                margin-left: 10px;
+                &:nth-child(2){
+                    background-color: #f39910;
+                }
+                }
+            }
+        }
+    
+    .results{
+            width: 100%;
+            height: 450px;
+            margin-top: 50px;
+            position: relative;
+            h2.title{
+                @include title-style();
+            }
+            h2.title span{
+                @include span-style();
+            }
+            h2.title span:before, 
+            h2.title span:after{
+                @include line-style();
+            }
+            h2.title span:before{
+                left: 40%;
+            }
+            h2.title span:after{
+                right: 40%;
+            }
+
+            .descrition{
+                width: 300px;
+                height: 240px;
+                position: absolute;
+                left: 270px;
+                top: 130px;
+                p{
+                    &:first-child{
+                        color: #666;
+                        font-size: 23px;
+                    }
+                    &:nth-of-type(2){
+                        color: #999;
+                        text-align: justify;
+                        padding-top: 20px;
+                    }
+                }
+                a{
+                    button{
+                        background-color: #fff;
+                        margin-top: 15px;
+                        color: #58a41a;
+                        border-color: #58a41a;
+                    }
+                }
+            }
+            .styleImags{
+                position: absolute;
+                left: 600px;
+                top: 80px;
+                img{
+                    width: 480px;
+                }
+                p{
+                    padding-left: 25px;
+                    padding-top: 5px;
+                    a{
+                        span{
+                            color: #666;
+                            padding-left: 18px;
+                        }
+                    }
+                }
+            }
+        }
+
+    .newsCenter{
+        width: 100%;
+        height: 450px;
+        margin-top: 50px;
+        background-image: url(../image/news_bkgimg.png);
+        background-size: contain;
+        h2.title{
+            @include title-style();
+            padding-top: 50px
+        }
+        h2.title span{
+            @include span-style();
+        }
+        h2.title span:before, 
+        h2.title span:after{
+            @include line-style();
+        }
+        h2.title span:before{
+            left: 40%;
+        }
+        h2.title span:after{
+            right: 40%;
+        }
+        .news{
+            padding-top: 60px;
+            display: flex;
+            justify-content: space-around;
+            .events{
+                width: 275px;
+              .img_box{
+                width: 260px;
+                height: 130px;
+                box-sizing: border-box;
+                border: 1px solid #666;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                img{
+                    width: 240px;
+                }
+              }
+              p{
+                color: #fff;
+                &:nth-of-type(1){
+                    text-align: center;
+                    padding-bottom: 10px;
+                }
+                &:nth-last-of-type(1){
+                   
+                   text-align: justify;
+                   padding-top: 10px;
+                }
+              }  
+              a{
+                   
+                .button{
+                    width: 70px;
+                    height: 20px;
+                    box-sizing: border-box;
+                    border: 1px solid #fff;
+                    color: #fefefe;
+                    background-color: rgb(69,54,43);
+                    text-align: center;
+                    margin-left: 100px;
+                    margin-top: 10px;
+                }
+            }
+            }
+        }
+    }    
+
+    .furnish{
+        width: 100%;
+        height: 500px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        h2.title{
+            @include title-style();
+            padding-top: 50px
+        }
+        h2.title span{
+            @include span-style();
+        }
+        h2.title span:before, 
+        h2.title span:after{
+            @include line-style();
+        }
+        h2.title span:before{
+            left: 40%;
+        }
+        h2.title span:after{
+            right: 40%;
+        }
+        .details{
+            display: flex;
+            .gonglue{
+                width: 300px;
+                height: 400px;
+                margin-top: 40px;
+                margin-left: 180px;
+                box-shadow: 6px 9px 10px 8px 
+		        rgba(0, 0, 0, 0.08);
+                .head{
+                    height: 150px;
+                    background-image: url(../image/gonglue_bkgimg.png);
+                    text-align: center;
+                    color: #fead45;
+                    margin-bottom: 15px;
+                    p{
+                      i{
+                        font-size: 50px;
+                      }
+                      &:first-child{
+                        padding-top: 50px;
+                      }
+                      &:last-child{
+                        padding-top: 10px;
+                        font-size: 20px;
+                      }
+                    }
+                }
+                .center{
+                    height: 100px;
+                    position: relative;
+                    border-bottom: 1px dashed #000;
+                    img{
+                        width: 90px;
+                        height: 80px;
+                    }
+                    p{
+                       position: absolute;
+                        &:nth-of-type(1){
+                            left: 100px;
+                            top: 10px;
+                        }
+                        &:nth-last-of-type(1){
+                            left: 100px;
+                            top: 33px;
+                        }
+                    }
+                }
+                .footer{
+                    height: 150px;
+                    margin-top: 15px;
+                    a{
+                        color: #999;
+                    }
+                }
+            }
+
+            .diary{
+                width: 270px;
+                height: 365px;
+                border: solid 1px #cccccc;
+                border-left: none;
+                box-sizing: border-box;
+                margin-top: 50px;
+                .head{
+                   height: 150px;
+                   background-color: rgb(246,246,246);
+                   color: #fead45;
+                   text-align: center;
+                   p{
+                    i{
+                      font-size: 50px;
+                    }
+                    &:first-child{
+                      padding-top: 50px;
+                    }
+                    &:last-child{
+                      padding-top: 10px;
+                      font-size: 20px;
+                    }
+                  } 
+                }
+                .content{
+                    margin-top: 20px;
+                    p{
+                        padding-top: 10px;
+                        padding-left: 60px;
+                        a{
+                            color: #666;
+                        }
+                        i{
+                            padding-left: 130px;
+                        }
+                    }
+                }
+               
+            }
+
+            .ques{
+                width: 270px;
+                height: 365px;
+                border: solid 1px #cccccc;
+                border-left: none;
+                box-sizing: border-box;
+                margin-top: 50px;
+                .head{
+                   height: 150px;
+                   background-color: rgb(246,246,246);
+                   color: #fead45;
+                   text-align: center;
+                   p{
+                    i{
+                      font-size: 50px;
+                    }
+                    &:first-child{
+                      padding-top: 50px;
+                    }
+                    &:last-child{
+                      padding-top: 10px;
+                      font-size: 20px;
+                    }
+                  } 
+                }
+                .content{
+                    margin-top: 20px;
+                    p{
+                        padding-top: 10px;
+                        padding-left: 60px;
+                        a{
+                            color: #666;
+                        }
+                        i{
+                            padding-left: 130px;
+                        }
+                    }
+                }
+               
+            }
+
+            .tool{
+                width: 270px;
+                height: 365px;
+                border: solid 1px #cccccc;
+                border-left: none;
+                box-sizing: border-box;
+                margin-top: 50px;
+                .head{
+                   height: 150px;
+                   background-color: rgb(246,246,246);
+                   color: #fead45;
+                   text-align: center;
+                   p{
+                    i{
+                      font-size: 50px;
+                    }
+                    &:first-child{
+                      padding-top: 50px;
+                    }
+                    &:last-child{
+                      padding-top: 10px;
+                      font-size: 20px;
+                    }
+                  } 
+                }
+                .content{
+                    margin-top: 20px;
+                    p{
+                        padding-top: 10px;
+                        padding-left: 60px;
+                        a{
+                            color: #666;
+                        }
+                        i{
+                            padding-left: 130px;
+                        }
+                    }
+                }
+               
+            }
+        }
+    }
+
+    .aboutUs{
+        width: 100%;
+        height: 500px;
+        margin-top: 150px;
+        margin-bottom: 50px;
+        background-image: url(../image/aboutus_bkgimg.png);
+        h2.title{
+            @include title-style();
+            margin-bottom: 50px;
+            padding-top: 50px
+        }
+        h2.title span{
+            @include span-style();
+        }
+        h2.title span:before, 
+        h2.title span:after{
+            @include line-style();
+        }
+        h2.title span:before{
+            left: 40%;
+        }
+        h2.title span:after{
+            right: 40%;
+        }
+        .details{
+            width: 80%;
+            height: 50px;
+            margin: 0 auto;
+            p{
+                color: #fff;
+            }
+        }
+        .btn{
+            width: 80px;
+            height: 20px;
+            background-color: rgb(76,58,46);
+            color: #fff;
+            text-align: center;
+            padding-top: 5px;
+            margin: 0 auto;
+            border: 1px solid #fff;
+            margin-top: 40px;
+           }
+
+        .icon{
+            margin-top: 50px;
+            display: flex;
+            justify-content: space-evenly;
+            .about{
+                width: 70px;
+                height:70px;
+                border: 2px solid #fff;
+                border-radius: 50%;
+                p{
+                    i{
+                        font-size: 45px;
+                        padding-left: 12px;
+                    }
+                    padding-top: 20px;
+                    color: #fff;
+                }
+            }
+        }
+
+
+    }
+
+    .jiameng{
+     
+        h2.title{
+            @include title-style();
+            padding-top: 50px
+        }
+        h2.title span{
+            @include span-style();
+        }
+        h2.title span:before, 
+        h2.title span:after{
+            @include line-style();
+        }
+        h2.title span:before{
+            left: 40%;
+        }
+        h2.title span:after{
+            right: 40%;
+        }
+        .jiamengdian{
+            margin-top: 50px;
+            display: flex;
+            justify-content: space-around;
+            .zhejiang,
+            .shanghai,
+            .guangdong{
+                width: 300px;
+                height: 300px;
+                .imgBox{
+                    width: 205px;
+                    height: 205px;
+                    border: 1px solid #999;
+                    img{
+                        width: 200px;
+                        padding-top:8px;
+                        padding-left: 2px;
+                    }
+                }
+                button{
+                    height: 30px;
+                    margin-top: 10px;
+                    margin-left: 55px;
+                    background-color: #fff;
+                    border-color: #666;
+                }
+            }
+            .shanghai{
+                button{
+                    margin-bottom: 10px;
+                }
+            }
+        }
+
+
+    }
+
+    .contact{
+        height: 700px;
+        h2.title{
+            @include title-style();
+            padding-top: 50px
+        }
+        h2.title span{
+            @include span-style();
+        }
+        h2.title span:before, 
+        h2.title span:after{
+            @include line-style();
+        }
+        h2.title span:before{
+            left: 40%;
+        }
+        h2.title span:after{
+            right: 40%;
+        }
+        .details{
+            margin-top: 150px;
+            margin-left: 370px;
+            display: flex;
+           
+            .leftBox{
+                .address{
+                    p{
+                        color: #999;
+                        padding-top: 10px;
+                        padding-left: 15px;
+                    }
+                    .dizhi{
+                        border-left: 5px solid #f39910;
+                        p{
+                            font-size: 20px;
+                            padding-left: 5px;
+                            color: #666
+                        }
+                    }
+                    
+                }
+                .phoneNum{
+                    p{
+                        color: #999;
+                        padding-top: 20px;
+                        padding-left: 15px;
+                    }
+                    .lianxi{
+                        border-left: 5px solid #f39910;
+                        p{
+                            color: #666;
+                            padding-left: 5px;
+                        }
+                    }
+                }
+            }
+            .rightBox{
+                margin-left: 40px;
+                position: relative;
+                border-left: 1px solid #999 ;
+                .leftSide{
+                    margin-left: 50px;
+                    .inPut{
+                        padding-bottom: 40px;
+                    }
+                }
+                .rightSide{
+                   position: absolute;
+                   left: 230px;
+                   top: 0;
+                }
+            }
+            .subMit{
+                width: 420px;
+                background-color: #fff;
+                margin-left: 50px;
+                border-color: #e5e5e5;
+            }
+           
+        }
+    }
+
+
+        
+    }
+    
+    
+    
+
+    

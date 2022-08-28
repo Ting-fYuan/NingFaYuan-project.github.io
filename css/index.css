@@ -1,0 +1,600 @@
+@import 'common.css';
+main .banner {
+  width: 100%;
+}
+main .banner img {
+  height: 100%;
+}
+main .banner .boxCircle {
+  display: flex;
+  position: absolute;
+  top: 680px;
+  left: 730px;
+}
+main .banner .boxCircle .circle {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #fff;
+  margin-left: 10px;
+}
+main .banner .boxCircle .circle:nth-child(2) {
+  background-color: #f39910;
+}
+main .results {
+  width: 100%;
+  height: 450px;
+  margin-top: 50px;
+  position: relative;
+}
+main .results h2.title {
+  font-size: 12px;
+  font-weight: normal;
+  color: #999;
+  text-align: center;
+}
+main .results h2.title span {
+  display: block;
+  font-size: 25px;
+  color: #f39910;
+  padding-bottom: 10px;
+  position: relative;
+}
+main .results h2.title span:before,
+main .results h2.title span:after {
+  content: "";
+  position: absolute;
+  width: 70px;
+  height: 2px;
+  background-color: #ccc;
+  top: 15px;
+}
+main .results h2.title span:before {
+  left: 40%;
+}
+main .results h2.title span:after {
+  right: 40%;
+}
+main .results .descrition {
+  width: 300px;
+  height: 240px;
+  position: absolute;
+  left: 270px;
+  top: 130px;
+}
+main .results .descrition p:first-child {
+  color: #666;
+  font-size: 23px;
+}
+main .results .descrition p:nth-of-type(2) {
+  color: #999;
+  text-align: justify;
+  padding-top: 20px;
+}
+main .results .descrition a button {
+  background-color: #fff;
+  margin-top: 15px;
+  color: #58a41a;
+  border-color: #58a41a;
+}
+main .results .styleImags {
+  position: absolute;
+  left: 600px;
+  top: 80px;
+}
+main .results .styleImags img {
+  width: 480px;
+}
+main .results .styleImags p {
+  padding-left: 25px;
+  padding-top: 5px;
+}
+main .results .styleImags p a span {
+  color: #666;
+  padding-left: 18px;
+}
+main .newsCenter {
+  width: 100%;
+  height: 450px;
+  margin-top: 50px;
+  background-image: url(../image/news_bkgimg.png);
+  background-size: contain;
+}
+main .newsCenter h2.title {
+  font-size: 12px;
+  font-weight: normal;
+  color: #999;
+  text-align: center;
+  padding-top: 50px;
+}
+main .newsCenter h2.title span {
+  display: block;
+  font-size: 25px;
+  color: #f39910;
+  padding-bottom: 10px;
+  position: relative;
+}
+main .newsCenter h2.title span:before,
+main .newsCenter h2.title span:after {
+  content: "";
+  position: absolute;
+  width: 70px;
+  height: 2px;
+  background-color: #ccc;
+  top: 15px;
+}
+main .newsCenter h2.title span:before {
+  left: 40%;
+}
+main .newsCenter h2.title span:after {
+  right: 40%;
+}
+main .newsCenter .news {
+  padding-top: 60px;
+  display: flex;
+  justify-content: space-around;
+}
+main .newsCenter .news .events {
+  width: 275px;
+}
+main .newsCenter .news .events .img_box {
+  width: 260px;
+  height: 130px;
+  box-sizing: border-box;
+  border: 1px solid #666;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .newsCenter .news .events .img_box img {
+  width: 240px;
+}
+main .newsCenter .news .events p {
+  color: #fff;
+}
+main .newsCenter .news .events p:nth-of-type(1) {
+  text-align: center;
+  padding-bottom: 10px;
+}
+main .newsCenter .news .events p:nth-last-of-type(1) {
+  text-align: justify;
+  padding-top: 10px;
+}
+main .newsCenter .news .events a .button {
+  width: 70px;
+  height: 20px;
+  box-sizing: border-box;
+  border: 1px solid #fff;
+  color: #fefefe;
+  background-color: rgb(69, 54, 43);
+  text-align: center;
+  margin-left: 100px;
+  margin-top: 10px;
+}
+main .furnish {
+  width: 100%;
+  height: 500px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+main .furnish h2.title {
+  font-size: 12px;
+  font-weight: normal;
+  color: #999;
+  text-align: center;
+  padding-top: 50px;
+}
+main .furnish h2.title span {
+  display: block;
+  font-size: 25px;
+  color: #f39910;
+  padding-bottom: 10px;
+  position: relative;
+}
+main .furnish h2.title span:before,
+main .furnish h2.title span:after {
+  content: "";
+  position: absolute;
+  width: 70px;
+  height: 2px;
+  background-color: #ccc;
+  top: 15px;
+}
+main .furnish h2.title span:before {
+  left: 40%;
+}
+main .furnish h2.title span:after {
+  right: 40%;
+}
+main .furnish .details {
+  display: flex;
+}
+main .furnish .details .gonglue {
+  width: 300px;
+  height: 400px;
+  margin-top: 40px;
+  margin-left: 180px;
+  box-shadow: 6px 9px 10px 8px rgba(0, 0, 0, 0.08);
+}
+main .furnish .details .gonglue .head {
+  height: 150px;
+  background-image: url(../image/gonglue_bkgimg.png);
+  text-align: center;
+  color: #fead45;
+  margin-bottom: 15px;
+}
+main .furnish .details .gonglue .head p i {
+  font-size: 50px;
+}
+main .furnish .details .gonglue .head p:first-child {
+  padding-top: 50px;
+}
+main .furnish .details .gonglue .head p:last-child {
+  padding-top: 10px;
+  font-size: 20px;
+}
+main .furnish .details .gonglue .center {
+  height: 100px;
+  position: relative;
+  border-bottom: 1px dashed #000;
+}
+main .furnish .details .gonglue .center img {
+  width: 90px;
+  height: 80px;
+}
+main .furnish .details .gonglue .center p {
+  position: absolute;
+}
+main .furnish .details .gonglue .center p:nth-of-type(1) {
+  left: 100px;
+  top: 10px;
+}
+main .furnish .details .gonglue .center p:nth-last-of-type(1) {
+  left: 100px;
+  top: 33px;
+}
+main .furnish .details .gonglue .footer {
+  height: 150px;
+  margin-top: 15px;
+}
+main .furnish .details .gonglue .footer a {
+  color: #999;
+}
+main .furnish .details .diary {
+  width: 270px;
+  height: 365px;
+  border: solid 1px #cccccc;
+  border-left: none;
+  box-sizing: border-box;
+  margin-top: 50px;
+}
+main .furnish .details .diary .head {
+  height: 150px;
+  background-color: rgb(246, 246, 246);
+  color: #fead45;
+  text-align: center;
+}
+main .furnish .details .diary .head p i {
+  font-size: 50px;
+}
+main .furnish .details .diary .head p:first-child {
+  padding-top: 50px;
+}
+main .furnish .details .diary .head p:last-child {
+  padding-top: 10px;
+  font-size: 20px;
+}
+main .furnish .details .diary .content {
+  margin-top: 20px;
+}
+main .furnish .details .diary .content p {
+  padding-top: 10px;
+  padding-left: 60px;
+}
+main .furnish .details .diary .content p a {
+  color: #666;
+}
+main .furnish .details .diary .content p i {
+  padding-left: 130px;
+}
+main .furnish .details .ques {
+  width: 270px;
+  height: 365px;
+  border: solid 1px #cccccc;
+  border-left: none;
+  box-sizing: border-box;
+  margin-top: 50px;
+}
+main .furnish .details .ques .head {
+  height: 150px;
+  background-color: rgb(246, 246, 246);
+  color: #fead45;
+  text-align: center;
+}
+main .furnish .details .ques .head p i {
+  font-size: 50px;
+}
+main .furnish .details .ques .head p:first-child {
+  padding-top: 50px;
+}
+main .furnish .details .ques .head p:last-child {
+  padding-top: 10px;
+  font-size: 20px;
+}
+main .furnish .details .ques .content {
+  margin-top: 20px;
+}
+main .furnish .details .ques .content p {
+  padding-top: 10px;
+  padding-left: 60px;
+}
+main .furnish .details .ques .content p a {
+  color: #666;
+}
+main .furnish .details .ques .content p i {
+  padding-left: 130px;
+}
+main .furnish .details .tool {
+  width: 270px;
+  height: 365px;
+  border: solid 1px #cccccc;
+  border-left: none;
+  box-sizing: border-box;
+  margin-top: 50px;
+}
+main .furnish .details .tool .head {
+  height: 150px;
+  background-color: rgb(246, 246, 246);
+  color: #fead45;
+  text-align: center;
+}
+main .furnish .details .tool .head p i {
+  font-size: 50px;
+}
+main .furnish .details .tool .head p:first-child {
+  padding-top: 50px;
+}
+main .furnish .details .tool .head p:last-child {
+  padding-top: 10px;
+  font-size: 20px;
+}
+main .furnish .details .tool .content {
+  margin-top: 20px;
+}
+main .furnish .details .tool .content p {
+  padding-top: 10px;
+  padding-left: 60px;
+}
+main .furnish .details .tool .content p a {
+  color: #666;
+}
+main .furnish .details .tool .content p i {
+  padding-left: 130px;
+}
+main .aboutUs {
+  width: 100%;
+  height: 500px;
+  margin-top: 150px;
+  margin-bottom: 50px;
+  background-image: url(../image/aboutus_bkgimg.png);
+}
+main .aboutUs h2.title {
+  font-size: 12px;
+  font-weight: normal;
+  color: #999;
+  text-align: center;
+  margin-bottom: 50px;
+  padding-top: 50px;
+}
+main .aboutUs h2.title span {
+  display: block;
+  font-size: 25px;
+  color: #f39910;
+  padding-bottom: 10px;
+  position: relative;
+}
+main .aboutUs h2.title span:before,
+main .aboutUs h2.title span:after {
+  content: "";
+  position: absolute;
+  width: 70px;
+  height: 2px;
+  background-color: #ccc;
+  top: 15px;
+}
+main .aboutUs h2.title span:before {
+  left: 40%;
+}
+main .aboutUs h2.title span:after {
+  right: 40%;
+}
+main .aboutUs .details {
+  width: 80%;
+  height: 50px;
+  margin: 0 auto;
+}
+main .aboutUs .details p {
+  color: #fff;
+}
+main .aboutUs .btn {
+  width: 80px;
+  height: 20px;
+  background-color: rgb(76, 58, 46);
+  color: #fff;
+  text-align: center;
+  padding-top: 5px;
+  margin: 0 auto;
+  border: 1px solid #fff;
+  margin-top: 40px;
+}
+main .aboutUs .icon {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-evenly;
+}
+main .aboutUs .icon .about {
+  width: 70px;
+  height: 70px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+}
+main .aboutUs .icon .about p {
+  padding-top: 20px;
+  color: #fff;
+}
+main .aboutUs .icon .about p i {
+  font-size: 45px;
+  padding-left: 12px;
+}
+main .jiameng h2.title {
+  font-size: 12px;
+  font-weight: normal;
+  color: #999;
+  text-align: center;
+  padding-top: 50px;
+}
+main .jiameng h2.title span {
+  display: block;
+  font-size: 25px;
+  color: #f39910;
+  padding-bottom: 10px;
+  position: relative;
+}
+main .jiameng h2.title span:before,
+main .jiameng h2.title span:after {
+  content: "";
+  position: absolute;
+  width: 70px;
+  height: 2px;
+  background-color: #ccc;
+  top: 15px;
+}
+main .jiameng h2.title span:before {
+  left: 40%;
+}
+main .jiameng h2.title span:after {
+  right: 40%;
+}
+main .jiameng .jiamengdian {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+}
+main .jiameng .jiamengdian .zhejiang,
+main .jiameng .jiamengdian .shanghai,
+main .jiameng .jiamengdian .guangdong {
+  width: 300px;
+  height: 300px;
+}
+main .jiameng .jiamengdian .zhejiang .imgBox,
+main .jiameng .jiamengdian .shanghai .imgBox,
+main .jiameng .jiamengdian .guangdong .imgBox {
+  width: 205px;
+  height: 205px;
+  border: 1px solid #999;
+}
+main .jiameng .jiamengdian .zhejiang .imgBox img,
+main .jiameng .jiamengdian .shanghai .imgBox img,
+main .jiameng .jiamengdian .guangdong .imgBox img {
+  width: 200px;
+  padding-top: 8px;
+  padding-left: 2px;
+}
+main .jiameng .jiamengdian .zhejiang button,
+main .jiameng .jiamengdian .shanghai button,
+main .jiameng .jiamengdian .guangdong button {
+  height: 30px;
+  margin-top: 10px;
+  margin-left: 55px;
+  background-color: #fff;
+  border-color: #666;
+}
+main .jiameng .jiamengdian .shanghai button {
+  margin-bottom: 10px;
+}
+main .contact {
+  height: 700px;
+}
+main .contact h2.title {
+  font-size: 12px;
+  font-weight: normal;
+  color: #999;
+  text-align: center;
+  padding-top: 50px;
+}
+main .contact h2.title span {
+  display: block;
+  font-size: 25px;
+  color: #f39910;
+  padding-bottom: 10px;
+  position: relative;
+}
+main .contact h2.title span:before,
+main .contact h2.title span:after {
+  content: "";
+  position: absolute;
+  width: 70px;
+  height: 2px;
+  background-color: #ccc;
+  top: 15px;
+}
+main .contact h2.title span:before {
+  left: 40%;
+}
+main .contact h2.title span:after {
+  right: 40%;
+}
+main .contact .details {
+  margin-top: 150px;
+  margin-left: 370px;
+  display: flex;
+}
+main .contact .details .leftBox .address p {
+  color: #999;
+  padding-top: 10px;
+  padding-left: 15px;
+}
+main .contact .details .leftBox .address .dizhi {
+  border-left: 5px solid #f39910;
+}
+main .contact .details .leftBox .address .dizhi p {
+  font-size: 20px;
+  padding-left: 5px;
+  color: #666;
+}
+main .contact .details .leftBox .phoneNum p {
+  color: #999;
+  padding-top: 20px;
+  padding-left: 15px;
+}
+main .contact .details .leftBox .phoneNum .lianxi {
+  border-left: 5px solid #f39910;
+}
+main .contact .details .leftBox .phoneNum .lianxi p {
+  color: #666;
+  padding-left: 5px;
+}
+main .contact .details .rightBox {
+  margin-left: 40px;
+  position: relative;
+  border-left: 1px solid #999;
+}
+main .contact .details .rightBox .leftSide {
+  margin-left: 50px;
+}
+main .contact .details .rightBox .leftSide .inPut {
+  padding-bottom: 40px;
+}
+main .contact .details .rightBox .rightSide {
+  position: absolute;
+  left: 230px;
+  top: 0;
+}
+main .contact .details .subMit {
+  width: 420px;
+  background-color: #fff;
+  margin-left: 50px;
+  border-color: #e5e5e5;
+}
+
+/*# sourceMappingURL=index.css.map */

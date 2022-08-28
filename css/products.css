@@ -1,0 +1,245 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  text-decoration: none;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+/* remember to define focus styles! */
+:focus {
+  outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+  text-decoration: none;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+header {
+  width: 100%;
+  height: 70px;
+}
+header .headLeft {
+  display: inline-block;
+  width: 40%;
+  text-align: center;
+}
+header .headLeft img {
+  width: 45px;
+  display: inline-block;
+  position: absolute;
+  left: 250px;
+  top: 18px;
+}
+header .headLeft p {
+  color: #f39910;
+  display: inline-block;
+  position: absolute;
+}
+header .headLeft p:nth-of-type(1) {
+  font-size: 19px;
+  top: 20px;
+  letter-spacing: 9px;
+}
+header .headLeft p:last-child {
+  font-size: 7px;
+  top: 43px;
+}
+header .headRight {
+  display: inline-block;
+  width: 40%;
+  text-align: center;
+  line-height: 70px;
+}
+header .headRight ul li {
+  display: inline-block;
+}
+header .headRight ul li a {
+  color: #666;
+  padding-right: 20px;
+}
+header .headRight ul li a:hover {
+  color: #f39910;
+}
+header .headRight ul li a::before {
+  content: "";
+  border-left: 1px solid #000;
+  padding-left: 20px;
+}
+header .headRight ul li:nth-child(5)::after {
+  content: "";
+  border-left: 1px solid #000;
+  padding-left: 20px;
+}
+
+footer .copyRight {
+  width: 100%;
+  height: 120px;
+  background-color: #48382c;
+}
+footer .copyRight p {
+  text-align: center;
+}
+footer .copyRight p:first-child {
+  color: #fff;
+  padding-top: 50px;
+}
+footer .copyRight p:last-child {
+  color: #999;
+  padding-top: 10px;
+}
+
+main .banner {
+  position: relative;
+  height: 500px;
+  overflow: hidden;
+}
+main .banner p {
+  color: #fff;
+  position: absolute;
+  left: 680px;
+}
+main .banner p:nth-of-type(1) {
+  font-size: 30px;
+  top: 210px;
+}
+main .banner p:nth-of-type(2) {
+  font-size: 20px;
+  top: 260px;
+}
+main .category {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  border-bottom: 1px solid #000;
+  display: flex;
+}
+main .category ul {
+  padding-left: 180px;
+}
+main .category ul li {
+  display: inline-block;
+}
+main .category ul li a {
+  color: #000;
+  padding-left: 30px;
+}
+main .category ul li a:hover {
+  color: #f57d0d;
+}
+main .category span {
+  color: #999;
+  padding-left: 680px;
+}
+main .productImag {
+  width: 1000px;
+  margin-top: 10px;
+  margin-left: 200px;
+  display: flex;
+  align-content: flex-start;
+  flex-flow: wrap;
+  overflow: hidden;
+}
+main .productImag .productDetails {
+  width: 180px;
+  height: 130px;
+  flex: 0 0 20%;
+  margin-left: 30px;
+}
+main .productImag .productDetails a {
+  width: 180px;
+  height: 130px;
+  text-decoration: none;
+  position: relative;
+}
+main .productImag .productDetails a img {
+  width: 180px;
+  height: 105px;
+}
+main .productImag .productDetails a .cover {
+  width: 180px;
+  height: 105px;
+  background: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  color: #fff;
+  transition: 0.6s;
+}
+main .productImag .productDetails a .cover:hover {
+  opacity: 0.6;
+}
+main .productImag .productDetails a .cover span i {
+  position: absolute;
+  left: 60px;
+  top: 20px;
+  color: #f57d0d;
+  font-size: 60px;
+}
+main .productImag .productDetails a p {
+  text-align: center;
+  padding-top: 5px;
+  background-color: #f8f8f8;
+  color: #666;
+}
+main .productImag .productDetails a p:hover {
+  width: 180px;
+  background-color: #f57d0d;
+}
+main .productImag .pageNum {
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+main .productImag .pageNum button:hover {
+  color: #fff;
+  background-color: coral;
+}
+
+/*# sourceMappingURL=products.css.map */
