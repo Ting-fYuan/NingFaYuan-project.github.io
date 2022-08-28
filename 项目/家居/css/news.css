@@ -1,0 +1,241 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  text-decoration: none;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+/* remember to define focus styles! */
+:focus {
+  outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+  text-decoration: none;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+header {
+  width: 100%;
+  height: 70px;
+}
+header .headLeft {
+  display: inline-block;
+  width: 40%;
+  text-align: center;
+}
+header .headLeft img {
+  width: 45px;
+  display: inline-block;
+  position: absolute;
+  left: 250px;
+  top: 18px;
+}
+header .headLeft p {
+  color: #f39910;
+  display: inline-block;
+  position: absolute;
+}
+header .headLeft p:nth-of-type(1) {
+  font-size: 19px;
+  top: 20px;
+  letter-spacing: 9px;
+}
+header .headLeft p:last-child {
+  font-size: 7px;
+  top: 43px;
+}
+header .headRight {
+  display: inline-block;
+  width: 40%;
+  text-align: center;
+  line-height: 70px;
+}
+header .headRight ul li {
+  display: inline-block;
+}
+header .headRight ul li a {
+  color: #666;
+  padding-right: 20px;
+}
+header .headRight ul li a:hover {
+  color: #f39910;
+}
+header .headRight ul li a::before {
+  content: "";
+  border-left: 1px solid #000;
+  padding-left: 20px;
+}
+header .headRight ul li:nth-child(5)::after {
+  content: "";
+  border-left: 1px solid #000;
+  padding-left: 20px;
+}
+
+footer .copyRight {
+  width: 100%;
+  height: 120px;
+  background-color: #48382c;
+}
+footer .copyRight p {
+  text-align: center;
+}
+footer .copyRight p:first-child {
+  color: #fff;
+  padding-top: 50px;
+}
+footer .copyRight p:last-child {
+  color: #999;
+  padding-top: 10px;
+}
+
+main .banner {
+  position: relative;
+}
+main .banner p {
+  color: #fff;
+  position: absolute;
+  left: 680px;
+}
+main .banner p:nth-of-type(1) {
+  font-size: 30px;
+  top: 130px;
+}
+main .banner p:nth-of-type(2) {
+  font-size: 20px;
+  top: 170px;
+}
+main .category {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  border-bottom: 1px solid #000;
+  display: flex;
+}
+main .category ul {
+  padding-left: 280px;
+}
+main .category ul li {
+  display: inline-block;
+}
+main .category ul li a {
+  color: #000;
+  padding-left: 20px;
+}
+main .category ul li a:hover {
+  color: #f57d0d;
+}
+main .category span {
+  color: #999;
+  padding-left: 680px;
+}
+main .NewsInfo {
+  margin-top: 30px;
+}
+main .NewsInfo .box1 {
+  width: 1000px;
+  border-bottom: 1px solid #000;
+  margin-bottom: 10px;
+  margin-left: 200px;
+  position: relative;
+  display: flex;
+}
+main .NewsInfo .box1 img {
+  width: 400px;
+  padding-bottom: 15px;
+}
+main .NewsInfo .box1 .date {
+  width: 60px;
+  height: 65px;
+  background-color: #f57d0d;
+  position: absolute;
+  top: 0;
+  left: 10px;
+}
+main .NewsInfo .box1 .date p {
+  color: #fff;
+}
+main .NewsInfo .box1 .date p:nth-of-type(1) {
+  padding-top: 20px;
+  text-align: center;
+}
+main .NewsInfo .box1 .date p:nth-of-type(2) {
+  padding-top: 3px;
+}
+main .NewsInfo .content {
+  width: 300px;
+  margin-left: 27px;
+}
+main .NewsInfo .content p:nth-of-type(1) {
+  color: #666;
+  font-size: 18px;
+  padding-bottom: 8px;
+}
+main .NewsInfo .content p:nth-of-type(2) {
+  color: #999;
+  font-size: 13px;
+}
+main .NewsInfo .content button {
+  width: 70px;
+  height: 25px;
+  background-color: #f57d0d;
+  color: #fff;
+  border: none;
+  margin-top: 80px;
+}
+main .NewsInfo .pageNum {
+  margin-top: 30px;
+  margin-left: 600px;
+  margin-bottom: 40px;
+}
+main .NewsInfo .pageNum button:hover {
+  color: #fff;
+  background-color: coral;
+}
+
+/*# sourceMappingURL=news.css.map */

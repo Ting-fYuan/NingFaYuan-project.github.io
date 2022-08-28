@@ -1,0 +1,137 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  text-decoration: none;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+/* remember to define focus styles! */
+:focus {
+  outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+  text-decoration: none;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+header {
+  width: 100%;
+  height: 70px;
+}
+header .headLeft {
+  display: inline-block;
+  width: 40%;
+  text-align: center;
+}
+header .headLeft img {
+  width: 45px;
+  display: inline-block;
+  position: absolute;
+  left: 250px;
+  top: 18px;
+}
+header .headLeft p {
+  color: #f39910;
+  display: inline-block;
+  position: absolute;
+}
+header .headLeft p:nth-of-type(1) {
+  font-size: 19px;
+  top: 20px;
+  letter-spacing: 9px;
+}
+header .headLeft p:last-child {
+  font-size: 7px;
+  top: 43px;
+}
+header .headRight {
+  display: inline-block;
+  width: 40%;
+  text-align: center;
+  line-height: 70px;
+}
+header .headRight ul li {
+  display: inline-block;
+}
+header .headRight ul li a {
+  color: #666;
+  padding-right: 20px;
+}
+header .headRight ul li a:hover {
+  color: #f39910;
+}
+header .headRight ul li a::before {
+  content: "";
+  border-left: 1px solid #000;
+  padding-left: 20px;
+}
+header .headRight ul li:nth-child(5)::after {
+  content: "";
+  border-left: 1px solid #000;
+  padding-left: 20px;
+}
+
+footer .copyRight {
+  width: 100%;
+  height: 120px;
+  background-color: #48382c;
+}
+footer .copyRight p {
+  text-align: center;
+}
+footer .copyRight p:first-child {
+  color: #fff;
+  padding-top: 50px;
+}
+footer .copyRight p:last-child {
+  color: #999;
+  padding-top: 10px;
+}
+
+/*# sourceMappingURL=common.css.map */

@@ -1,0 +1,227 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  text-decoration: none;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+/* remember to define focus styles! */
+:focus {
+  outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+  text-decoration: none;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+header {
+  width: 100%;
+  height: 70px;
+}
+header .headLeft {
+  display: inline-block;
+  width: 40%;
+  text-align: center;
+}
+header .headLeft img {
+  width: 45px;
+  display: inline-block;
+  position: absolute;
+  left: 250px;
+  top: 18px;
+}
+header .headLeft p {
+  color: #f39910;
+  display: inline-block;
+  position: absolute;
+}
+header .headLeft p:nth-of-type(1) {
+  font-size: 19px;
+  top: 20px;
+  letter-spacing: 9px;
+}
+header .headLeft p:last-child {
+  font-size: 7px;
+  top: 43px;
+}
+header .headRight {
+  display: inline-block;
+  width: 40%;
+  text-align: center;
+  line-height: 70px;
+}
+header .headRight ul li {
+  display: inline-block;
+}
+header .headRight ul li a {
+  color: #666;
+  padding-right: 20px;
+}
+header .headRight ul li a:hover {
+  color: #f39910;
+}
+header .headRight ul li a::before {
+  content: "";
+  border-left: 1px solid #000;
+  padding-left: 20px;
+}
+header .headRight ul li:nth-child(5)::after {
+  content: "";
+  border-left: 1px solid #000;
+  padding-left: 20px;
+}
+
+footer .copyRight {
+  width: 100%;
+  height: 120px;
+  background-color: #48382c;
+}
+footer .copyRight p {
+  text-align: center;
+}
+footer .copyRight p:first-child {
+  color: #fff;
+  padding-top: 50px;
+}
+footer .copyRight p:last-child {
+  color: #999;
+  padding-top: 10px;
+}
+
+main .banner {
+  position: relative;
+}
+main .banner p {
+  color: #fff;
+  position: absolute;
+  left: 680px;
+}
+main .banner p:nth-of-type(1) {
+  font-size: 30px;
+  top: 130px;
+}
+main .banner p:nth-of-type(2) {
+  font-size: 20px;
+  top: 170px;
+}
+main .category {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  border-bottom: 1px solid #000;
+  display: flex;
+}
+main .category ul {
+  padding-left: 280px;
+}
+main .category ul li {
+  display: inline-block;
+}
+main .category ul li a {
+  color: #000;
+  padding-left: 20px;
+}
+main .category ul li a:hover {
+  color: #f57d0d;
+}
+main .category span {
+  color: #999;
+  padding-left: 400px;
+}
+main .profile {
+  width: 180px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+main .profile p {
+  text-align: center;
+}
+main .profile p:nth-of-type(1) {
+  font-size: 23px;
+  color: #333;
+}
+main .profile p:nth-of-type(2) {
+  font-size: 12px;
+  color: #666;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+main .profile .line {
+  border-bottom: 1px solid #999;
+}
+main .introduce {
+  margin-top: 50px;
+  margin-left: 200px;
+  margin-bottom: 50px;
+}
+main .introduce .details {
+  margin-top: 50px;
+  display: flex;
+}
+main .introduce .details img {
+  width: 500px;
+}
+main .introduce .details .content {
+  width: 500px;
+  height: 300px;
+  margin-left: 30px;
+  margin-top: 20px;
+  position: relative;
+}
+main .introduce .details .content p {
+  color: #999;
+}
+main .introduce .details .content a {
+  color: #f57d0d;
+  position: absolute;
+  left: 415px;
+  bottom: 60px;
+}
+
+/*# sourceMappingURL=aboutUs.css.map */
